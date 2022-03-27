@@ -7,6 +7,7 @@
   CFLAGS  = -g -Wall
 
   all: clean menus.o register.o login.o tictactoe.o main.o main
+  normal: menus.o register.o login.o tictactoe.o main.o main
  
   main: login.o menus.o register.o main.o
 	$(CC) $(CFLAGS) -o main main.o login.o menus.o register.o tictactoe.o

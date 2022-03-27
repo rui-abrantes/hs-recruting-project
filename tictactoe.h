@@ -18,6 +18,7 @@ class TicTacToe {
         bool emptySpace(int position);
         bool verifyDraw();
         bool verifyWin();
+        bool verifyWinner(char player);
     
     public:
         TicTacToe(string newName){
@@ -31,6 +32,7 @@ class TicTacToe {
         bool playTurn(char player, int position);
         bool playerMove();
         bool botMove();
+        int minMax(int depth , bool isMaximizing);
 
         void playGame();
 };
