@@ -1,6 +1,7 @@
 #include "menus.h"
 #include "login.h"
 #include "register.h"   
+#include "tictactoe.h"
 
 //https://www.softwaretestinghelp.com/cpp-makefile-tutorial/
 
@@ -9,6 +10,9 @@
 int main(){
     int exit = 0;
     int logged = 0;
+
+    TicTacToe newTicTacToe("RUI");
+
     while(!exit){
         switch(principalMenu()){
             case 1:
@@ -24,7 +28,9 @@ int main(){
                 cout << "That is not an option\n" << endl;
         }
         while(logged){
-            
+            newTicTacToe.inicializeGame();
+            newTicTacToe.playGame();
+            logged = 0;
         }
     }
     

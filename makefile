@@ -6,10 +6,10 @@
   #  -Wall  - this flag is used to turn on most compiler warnings
   CFLAGS  = -g -Wall
 
-  all: menus.o register.o login.o main.o main
+  all: clean menus.o register.o login.o tictactoe.o main.o main
  
   main: login.o menus.o register.o main.o
-	$(CC) $(CFLAGS) -o main main.o login.o menus.o register.o
+	$(CC) $(CFLAGS) -o main main.o login.o menus.o register.o tictactoe.o
   
 
   menus.o: menus.h menus.cpp 
@@ -20,6 +20,9 @@
   
   login.o: login.h login.cpp 
 	$(CC) $(CFLAGS) -c login.cpp
+
+  tictactoe.o: tictactoe.h tictactoe.cpp 
+	$(CC) $(CFLAGS) -c tictactoe.cpp
   
  
   main.o: register.h login.h menus.h main.cpp
