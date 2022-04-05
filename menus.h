@@ -7,9 +7,7 @@ using namespace std;
 
 
 int principalMenu();
+int loginMenu();
 int tictactoeMenu();
-int chatbotMenu();
-int calculatorMenu();
-
 
 #endif
