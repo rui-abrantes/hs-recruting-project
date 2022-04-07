@@ -24,15 +24,3 @@ int loginMenu(){
 
     return menu;
 }
-
-int tictactoeMenu(){
-    return 0;
-}
-
-int chatbotMenu(){
-    return 0;
-}
-
-int calculatorMenu(){
-    return 0;
-}

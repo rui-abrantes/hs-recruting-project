@@ -4,10 +4,7 @@
 #include <iostream>
 using namespace std;
 
-
-
 int principalMenu();
 int loginMenu();
-int tictactoeMenu();
 
 #endif

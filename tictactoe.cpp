@@ -68,7 +68,8 @@ bool TicTacToe::playTurn(char player, int position){
 
     if(emptySpace(position)){
         board[position - 1] = player;
-        printBoard();
+        if(player == bot)
+            printBoard();
 
         if( verifyDraw()){
             cout << "The game ended, it was a DRAW\n\n" << endl;
